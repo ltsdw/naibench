@@ -57,7 +57,7 @@ static inline void stop(NaiBench* naibench)
     printf("%s: %.9f time elapsed.\n", naibench->m_func_name, elapsed);
 }
 
-#define NAIBENCH_START_() NaiBench naibench = start(__func__)
+#define NAIBENCH_START() NaiBench naibench = start(__func__)
 #define NAIBENCH_STOP() stop(&naibench)
 
 #endif
