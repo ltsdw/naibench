@@ -20,8 +20,6 @@ project(
     LANGUAGES C
 )
 
-find_package(naibench REQUIRED)
-
 include(FetchContent)
 
 FetchContent_Declare(
